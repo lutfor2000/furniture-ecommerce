@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 // ---------Icon import-----------
@@ -49,16 +49,36 @@ const NavMenu = ({toggLeMenu}) =>{
 const Navbar = () =>{
 
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isScrolled,setIsScrolled] = useState(false)
 
     const toggleMenu = () => {
         setIsMenuOpen(prevState => !prevState)
     }
 
+    //---when scrolled apply bg color to navbar---
+    useEffect(()=>{
+
+        const handleScroll = () =>{
+            if(window.scrollY > 50){
+                setIsScrolled(true)
+            }else{
+                setIsScrolled(false)
+            }
+        }
+
+        window.addEventListener('scroll',handleScroll);
+
+        return ()=>{
+            window.addEventListener('scroll',handleScroll);
+        }
+
+    },[])
+
 
     return(
        <div>
 
-          <header className={`fixed top-0 left-0 right-0 text-white z-50 transition duration-300 ease-in-out`}>
+          <header className={`${isScrolled ? "bg-white shadow-md" : " bg-transparent text-white"} fixed top-0 left-0 right-0 z-50 transition duration-300 ease-in-out`}>
                 <nav className="container max-w-screen-2xl mx-auto flex justify-between items-center py-6 px-4">
                     {/* ----Logo----- */}
                     <Link className="font-bold" to="/">Logo</Link>

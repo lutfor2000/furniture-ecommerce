@@ -3,3 +3,7 @@
 body{
   font-family: "Poppins", sans-serif;
 }
+
+.section-container{
+  @apply container max-w-screen-2xl px-4 mx-auto;
+}
