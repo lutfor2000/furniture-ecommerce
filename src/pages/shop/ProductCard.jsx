@@ -12,6 +12,7 @@ const ProductCard = ({product}) => {
             </div>
 
             <div className='p-6 !bg-white dark:bg-black shadow-sm'>
+                
                 <h4 className='text-base text-[#8D8D8D] mb-1'>{product.category}</h4>
                 <h3 className='font-semibold text-xl mb-2'>{product.name}</h3>
                 <Rating rating={product.rating}/>

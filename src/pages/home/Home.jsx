@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import HeroSection from './HeroSection';
 import WhyChoose from './WhyChoose';
 import Products from '../shop/Products';
+import Expriences from './Expriences';
+import Materials from './Materials';
 
 
 const Home = () => {
@@ -19,6 +21,8 @@ const Home = () => {
             <HeroSection/>
             <WhyChoose/>
             <Products headline="Best Selling Product" products={products}/>
+            <Expriences/>
+            <Materials/>
         </>
     );
 };
