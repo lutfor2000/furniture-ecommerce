@@ -14,10 +14,16 @@ const Materials = () => {
                     <p className='dark:text-white !text-secondary mb-5 lg:w-2/3'>You don’t have to worry about the result because all of these interiors are made by people who are professionals in their fields with an elegant and lucurious style and with premium quality materials</p>
                 </div> 
 
-                <div className='gird md:grid-cols-3 flex'>
-                   <img className='w-50' src={materialOne} alt="Materials one Img" />
-                   <img className='w-50' src={materialTwo} alt="Materials two Img" />
-                   <img className='w-50' src={materialThree} alt="Materials Three Img" />
+                <div className='md:w-1/2 grid grid-cols-2 md:grid-cols-3 md:items-end items-center'>
+
+                    <div>
+                        <img className='w-50' src={materialOne} alt="Materials one Img" />
+                        <img className='w-50' src={materialTwo} alt="Materials two Img" />
+                    </div>
+
+                    <div className='col-span-1 md:col-span-2'>
+                        <img className='w-50' src={materialThree} alt="Materials Three Img" className=" w-full md:h-[541px]" />
+                    </div>
                 </div>
 
             </div>
