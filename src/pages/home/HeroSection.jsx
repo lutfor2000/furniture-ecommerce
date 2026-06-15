@@ -1,7 +1,7 @@
 import React from 'react';
 
 // --------Image Import---------
-import bannerImg from '../../assets/banner.png'
+import bannerImg from '../../assets/banner.png';
 
 // --------Icon Import---------
 import { RiSearchLine } from "react-icons/ri";

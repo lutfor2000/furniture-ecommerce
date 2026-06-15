@@ -22,7 +22,7 @@ const Materials = () => {
                     </div>
 
                     <div className='col-span-1 md:col-span-2'>
-                        <img className='w-50' src={materialThree} alt="Materials Three Img" className=" w-full md:h-[541px]" />
+                        <img className='w-50' src={materialThree} alt="Materials Three Img" className=" w-full lg:h-[541px]" />
                     </div>
                 </div>
 

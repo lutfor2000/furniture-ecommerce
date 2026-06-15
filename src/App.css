@@ -7,3 +7,19 @@ body{
 .section-container{
   @apply container max-w-screen-2xl px-4 mx-auto;
 }
+
+.dark {
+  @apply bg-gray-900 text-white;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+   @apply px-4 py-2 ring-1 ring-primary hover:text-white hover:bg-primary rounded-full bg-white text-black text-lg !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.swiper-navigation-icon{
+  @apply w-4 h-4 !important;
+}
